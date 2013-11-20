@@ -19,10 +19,10 @@
 <package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
 	<id>Niko:SMFProject</id>
 	<name>SMF Project Tools</name>
-	<version>0.504</version>
+	<version>0.503</version>
 	<type>modification</type>
 
-	<install for="2.0, 2.0.1">
+	<install for="2.0 RC5, 2.0">
 		<readme parsebbc="true">readme.txt</readme>
 
 		<!-- These files goes to Sources directory -->
@@ -75,7 +75,6 @@
 		<require-file name="Themes/default/images/feature.png" destination="$imagesdir" />
 		<require-file name="Themes/default/images/pdropdown.gif" destination="$imagesdir" />
 		<require-file name="Themes/default/images/ploading.gif" destination="$imagesdir" />
-		<require-file name="Themes/default/images/admin/feature_pj.png" destination="$imagesdir" />
 
 		<!-- Langauges -->
 		<require-file name="Themes/default/languages/Project.english.php" destination="$languagedir" />
@@ -93,11 +92,6 @@
 		<!-- Redirect to upgrader -->
 		<redirect url="$scripturl?action=admin;area=projectsadmin;sa=maintenance;activity=upgrade" timeout="10"></redirect>
 	</install>
-
-	<upgrade for="2.0, 2.0.1" from="0.503">
-		<readme parsebbc="true">readme.txt</readme>
-		<require-file name="Sources/Subs-Project.php" destination="$sourcedir" />
-	</upgrade>
 	
 	<upgrade for="2.0 RC5" from="0.502">
 		<readme parsebbc="true">readme.txt</readme>
@@ -182,7 +176,6 @@
 		<remove-file name="$imagesdir/feature.png" />
 		<remove-file name="$imagesdir/pdropdown.gif" />
 		<remove-file name="$imagesdir/ploading.gif" />
-		<remove-file name="$imagesdir/admin/feature_pj.png" />
 
 		<!-- Languages -->
 		<remove-file name="$languagedir/Project.english.php" />
